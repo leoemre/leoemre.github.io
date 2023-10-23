@@ -4,22 +4,31 @@ body {
   background-color: #fff;
 }
 
-.logo {
-  width: 10%;
-}
 header {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 nav a {
-  color: #0072B5; /* The blue we derived from your logo */
-  text-decoration: none;
-  padding: 10px;
+  color: #1E90FF; /* An estimation of the blue from the logo border */
+  font-weight: 600; /* Makes the text bolder */
+  text-decoration: none; /* Removes the underline from the anchor tags */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+  padding: 10px 20px; /* Spacing inside the navbar items */
+  border: 2px solid #1E90FF; /* Border color matching the logo's border */
+  border-radius: 5px; /* Rounded corners for a sleek look */
+  margin: 0 10px; /* Spacing between each navbar item */
+}
+
+nav img.logo {
+  height: 40px; /* Adjust based on your preference */
+  margin-right: 20px; /* Spacing to the right of the logo */
+  vertical-align: middle; /* Aligns the logo vertically with the text */
 }
 
 nav a:hover {
-  background-color: #f5f5f5;
+  background-color: #1E90FF; /* Background color on hover */
+  color: #fff; /* Text color on hover */
 }
 
 .hero-section {
